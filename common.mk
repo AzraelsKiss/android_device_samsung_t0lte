@@ -56,10 +56,6 @@ PRODUCT_PACKAGES += \
     Nfc \
     Tag
 
-# LockClock
-PRODUCT_PACKAGES += \
-    LockClock
-
 PRODUCT_COPY_FILES += \
     packages/apps/Nfc/migrate_nfc.txt:system/etc/updatecmds/migrate_nfc.txt \
     frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
@@ -83,6 +79,15 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
     mobiledata.interfaces=pdp0,gprs,ppp0,rmnet0,rmnet1
+
+# LockClock
+PRODUCT_PACKAGES += \
+    LockClock
+
+# NTFS
+PRODUCT_PACKAGES += \
+    ntfsfix \
+    ntfs-3g
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
