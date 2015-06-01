@@ -94,6 +94,14 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
     frameworks/native/data/etc/android.hardware.sensor.barometer.xml:system/etc/permissions/android.hardware.sensor.barometer.xml
 
+# GPS fix
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/gps/system/lib/libgps.utils.so:system/lib/libgps.utils.so \
+    $(LOCAL_PATH)/gps/system/lib/libloc_adapter.so:system/lib/libloc_adapter.so \
+    $(LOCAL_PATH)/gps/system/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
+    $(LOCAL_PATH)/gps/system/lib/libloc_eng.so:system/lib/libloc_eng.so \
+    $(LOCAL_PATH)/gps/system/lib/hw/gps.default.so:system/lib/hw/gps.default.so
+
 # Include common makefile
 $(call inherit-product, device/samsung/smdk4412-common/common.mk)
 $(call inherit-product, device/samsung/smdk4412-qcom-common/common.mk)
