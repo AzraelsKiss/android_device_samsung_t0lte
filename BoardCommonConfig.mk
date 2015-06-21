@@ -79,3 +79,6 @@ BOARD_SEPOLICY_UNION += \
     wpa_supplicant.te \
     zygote.te
 
+# TWRP
+DEVICE_RESOLUTION := 720x1280
+
