@@ -80,10 +80,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     mobiledata.interfaces=pdp0,gprs,ppp0,rmnet0,rmnet1
 
-# LockClock
-PRODUCT_PACKAGES += \
-    LockClock
-
 # NTFS
 PRODUCT_PACKAGES += \
     ntfsfix \
