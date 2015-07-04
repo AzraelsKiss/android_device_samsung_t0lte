@@ -195,4 +195,7 @@
     <!-- Boolean indicating whether we want button brightness support -->
     <bool name="config_button_brightness_support">true</bool>
 
+	<!-- Boolean to prevent suspending while screen is off due to proximity -->
+	<bool name="config_suspendWhenScreenOffDueToProximity">false</bool>
+
 </resources>
